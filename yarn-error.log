@@ -28,7 +28,7 @@ Trace:
 
 npm manifest: 
   {
-    "homepage": "http://bahaa-alden.github.io/my-p",
+    "homepage": "https://majed-alaswad9.github.io/portfolio/",
     "name": "my-portfolio",
     "version": "0.1.0",
     "dependencies": {
