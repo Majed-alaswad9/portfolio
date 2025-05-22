@@ -159,6 +159,13 @@ export const workExperiences = {
       date: "19-12-2023 -> 20-05-2025",
       companylogo: require("./assets/images/ulu-tech.jpeg"),
       role: "Flutter Developer"
+    },
+    {
+      company: "Lead",
+      desc: "Damascus",
+      date: "15-03-2025 -> present",
+      companylogo: require("./assets/images/lead.jpeg"),
+      role: "Flutter Developer"
     }
   ],
   display: true
