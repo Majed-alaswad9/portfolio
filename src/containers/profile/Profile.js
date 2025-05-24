@@ -19,7 +19,6 @@ export default function Profile() {
       const getProfileData = async () => {
         try {
           const res = (await axios.get("./profile.json")).data.data;
-          console.log(res.user);
           setProfileFunction(res.user);
         } catch (error) {
           console.log(error);
@@ -34,7 +33,6 @@ export default function Profile() {
     openSource.showGithubProfile === "true" &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
-    console.log(prof);
     return (
       <Suspense fallback={renderLoader()}>
         <GithubProfileCard prof={prof} key={prof.id} />

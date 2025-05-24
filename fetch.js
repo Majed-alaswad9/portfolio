@@ -21,7 +21,6 @@ if (USE_GITHUB_DATA === "true") {
     throw new Error(ERR.noUserName);
   }
 
-  console.log(`Fetching profile data for ${GITHUB_USERNAME}`);
   var data = JSON.stringify({
     query: `
 {
@@ -70,7 +69,6 @@ if (USE_GITHUB_DATA === "true") {
   const req = https.request(default_options, res => {
     let data = "";
 
-    console.log(`statusCode: ${res.statusCode}`);
     if (res.statusCode !== 200) {
       throw new Error(ERR.requestFailed);
     }
