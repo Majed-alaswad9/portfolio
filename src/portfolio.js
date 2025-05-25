@@ -182,7 +182,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "",
+  subtitle: "My Flutter Projects",
   projects: [
     {
       image: require("./assets/images/humy.png"),
@@ -219,6 +219,19 @@ const bigProjects = {
           url: "https://play.google.com/store/apps/details?id=com.ulutech.restaurantfid"
         }
       ]
+    },
+    {
+      image: require("./assets/images/golden-tag-logo.png"),
+      projectName: "Golden Tag",
+      projectDesc:
+        "a mobile app for managing jewelry stores. It supports inventory tracking, employee management, barcode scanning, and USD/SYP rates. It also allows screenshot sharing, TXT file generation, and item sales logging."
+      // footerLink: [
+      //   {
+      //     name: "Visit App",
+      //     url: ""
+      //   }
+      //   //  you can add extra buttons here.
+      // ]
     },
     {
       image: require("./assets/images/ubay.ico"),
@@ -270,19 +283,6 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
-    },
-    {
-      image: require("./assets/images/golden-tag-logo.png"),
-      projectName: "Golden Tag",
-      projectDesc:
-        "a mobile app for managing jewelry stores. It supports inventory tracking, employee management, barcode scanning, and USD/SYP rates. It also allows screenshot sharing, TXT file generation, and item sales logging."
-      // footerLink: [
-      //   {
-      //     name: "Visit App",
-      //     url: ""
-      //   }
-      //   //  you can add extra buttons here.
-      // ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
