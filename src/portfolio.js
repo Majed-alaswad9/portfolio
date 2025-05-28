@@ -26,7 +26,7 @@ const greeting = {
     "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1xvR9eyzBK-ByUPkdJSJ5cUQ-eHNY5Ors/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1wFEPoJltgfRjjCpSOqfBBZ0Vs5i0_2h6/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
