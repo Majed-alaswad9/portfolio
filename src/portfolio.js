@@ -26,7 +26,7 @@ const greeting = {
     "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1wFEPoJltgfRjjCpSOqfBBZ0Vs5i0_2h6/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1GGPejlu-EH5GxB2xnfjjMsTQH70BwMyI/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -68,6 +68,10 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "BLOC"
+      // fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "RIVERPOD"
       // fontAwesomeClassname: "fab fa-js"
     },
     {
@@ -224,11 +228,24 @@ const bigProjects = {
       image: require("./assets/images/golden-tag-logo.png"),
       projectName: "Golden Tag",
       projectDesc:
-        "a mobile app for managing jewelry stores. It supports inventory tracking, employee management, barcode scanning, and USD/SYP rates. It also allows screenshot sharing, TXT file generation, and item sales logging."
+        "a mobile app for managing jewelry stores. It supports inventory tracking, employee management, barcode scanning, and USD/SYP rates. It also allows screenshot sharing, TXT file generation, and item sales logging.",
+      footerLink: [
+        {
+          name: "Visit App",
+          url: "https://play.google.com/store/apps/details?id=com.leadbridge.golden_tag&pcampaignid=web_share"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/kaiali_logo.jpg"),
+      projectName: "Kaiali App",
+      projectDesc:
+        "·	A mobile application that aims to provide an integrated platform for topping up mobile credit and purchasing digital gaming cards.",
       // footerLink: [
       //   {
       //     name: "Visit App",
-      //     url: ""
+      //     url: "https://play.google.com/store/apps/details?id=com.leadbridge.golden_tag&pcampaignid=web_share"
       //   }
       //   //  you can add extra buttons here.
       // ]
