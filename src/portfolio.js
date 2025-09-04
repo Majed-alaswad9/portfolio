@@ -26,7 +26,7 @@ const greeting = {
     "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1GGPejlu-EH5GxB2xnfjjMsTQH70BwMyI/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1HTEMQzx2doPonn4HIq_kQZlqNYz3lj56/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -165,10 +165,10 @@ export const workExperiences = {
       role: "Flutter Developer"
     },
     {
-      company: "Lead",
+      company: "NEXLEAD",
       desc: "Damascus",
       date: "15-03-2025 -> present",
-      companylogo: require("./assets/images/lead.jpeg"),
+      companylogo: require("./assets/images/lead.jpg"),
       role: "Flutter Developer"
     }
   ],
@@ -315,7 +315,7 @@ const contactInfo = {
 
 // Twitter Section
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
