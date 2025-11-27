@@ -26,7 +26,7 @@ const greeting = {
     "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1yH_5JC9gzjVwTVImx_O85mvmQocEnXCD/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1aWXXWv-jnGpOL-mNlyP8W2Z6U7ybeaAF/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -161,14 +161,21 @@ export const workExperiences = {
       company: "Ulu-Tech",
       desc: "A company specialized in providing all software and marketing solutions",
       date: "19-12-2023 -> 20-05-2025",
-      companylogo: require("./assets/images/ulu-tech.jpeg"),
+      companyLogo: require("./assets/images/ulu-tech.jpeg"),
       role: "Flutter Developer"
     },
     {
       company: "NEXLEAD",
       desc: "Damascus",
-      date: "15-03-2025 -> present",
-      companylogo: require("./assets/images/lead.jpg"),
+      date: "15-03-2025 -> 01-10-2025",
+      companyLogo: require("./assets/images/lead.jpg"),
+      role: "Flutter Developer"
+    },
+    {
+      company: "Manaret Shahbaa Co",
+      desc: "Saudi Arabia, Riyadh",
+      date: "15-10-2025 -> present",
+      companyLogo: require("./assets/images/msc.svg"),
       role: "Flutter Developer"
     }
   ],
