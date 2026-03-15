@@ -16,6 +16,16 @@
   border: 1px solid $lightBorder1;
 }
 
+.experience-card-link-wrapper {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.experience-card-link-wrapper:hover {
+  cursor: pointer;
+}
+
 .experience-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }

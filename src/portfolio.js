@@ -26,7 +26,7 @@ const greeting = {
     "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1aWXXWv-jnGpOL-mNlyP8W2Z6U7ybeaAF/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1yhnIEtLHTlBD0aBHlJsVYlh91gBkUTOL/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -162,21 +162,32 @@ export const workExperiences = {
       desc: "A company specialized in providing all software and marketing solutions",
       date: "19-12-2023 -> 20-05-2025",
       companyLogo: require("./assets/images/ulu-tech.jpeg"),
-      role: "Flutter Developer"
+      role: "Flutter Developer",
+      link: "https://www.linkedin.com/company/ulutech-co/"
     },
     {
       company: "NEXLEAD",
-      desc: "Damascus",
+      desc: "a leading company in the field of information technology, providing integrated technical solutions to our customers",
       date: "15-03-2025 -> 01-10-2025",
       companyLogo: require("./assets/images/lead.jpg"),
-      role: "Flutter Developer"
+      role: "Flutter Developer",
+      link: "http://nexleadtech.com/"
+    },
+    {
+      company: "Al-Roya",
+      desc: "شركة برمجيات رائدة تأسست عام 2023 بهدف تقديم حلول تقنية مبتكرة للشركات والمؤسسات.",
+      date: "13-10-2025 -> present",
+      companyLogo: require("./assets/images/alroya.png"),
+      role: "Flutter Developer",
+      link: "https://alroya.tech/"
     },
     {
       company: "Manaret Shahbaa Co",
       desc: "Saudi Arabia, Riyadh",
       date: "15-10-2025 -> present",
-      companyLogo: require("./assets/images/msc.svg"),
-      role: "Flutter Developer"
+      companyLogo: require("./assets/images/msc.png"),
+      role: "Flutter Developer",
+      link: "https://msc-global.net/"
     }
   ],
   display: true
@@ -248,7 +259,7 @@ const bigProjects = {
       image: require("./assets/images/kaiali_logo.jpg"),
       projectName: "Kaiali App",
       projectDesc:
-        "·	A mobile application that aims to provide an integrated platform for topping up mobile credit and purchasing digital gaming cards.",
+        "A mobile application that aims to provide an integrated platform for topping up mobile credit and purchasing digital gaming cards."
       // footerLink: [
       //   {
       //     name: "Visit App",
@@ -258,52 +269,27 @@ const bigProjects = {
       // ]
     },
     {
-      image: require("./assets/images/ubay.ico"),
-      projectName: "U-Bay Customer",
+      image: require("./assets/images/sw.png"),
+      projectName: "SW Games",
       projectDesc:
-        "dynamic and user-friendly social media platform designed for the purpose of buying and selling second-hand items",
+        "a platform that provides digital gaming services such as account management, in-app purchases, and balance operations.",
       footerLink: [
         {
           name: "Visit App",
-          url: "https://github.com/Majed-alaswad9/uBay/releases/tag/1.0.0"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/ubay.ico"),
-      projectName: "U-Bay warehouse",
-      projectDesc:
-        "uBay is social media platform for selling and buying second-hand items",
-      footerLink: [
-        {
-          name: "Visit App",
-          url: "https://github.com/Majed-alaswad9/uBay_warehouse/releases/tag/1.0.0"
+          url: "https://play.google.com/store/apps/details?id=com.alroya.sw_games"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/naqla.png"),
-      projectName: "Naqla Customer",
+      image: require("./assets/images/afak.png"),
+      projectName: "Afak Elibdae",
       projectDesc:
-        "Naqla is a platform designed to simplify the process of moving house furniture and goods. Inspired by the convenience of ride-sharing apps, Naqla connects users with reliable truck drivers for a seamless, stress-free moving experience.",
+        "نظام إدارة شامل لمدارس أفاق الإبداع الدولية - طلاب، امتحانات، حضور.",
       footerLink: [
         {
           name: "Visit App",
-          url: "https://github.com/Majed-alaswad9/naqla-customer/releases/tag/1.0.0"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/naqla.png"),
-      projectName: "Naqla Driver",
-      projectDesc:
-        "Naqla is a platform designed to simplify the process of moving house furniture and goods. Inspired by the convenience of ride-sharing apps, Naqla connects users with reliable truck drivers for a seamless, stress-free moving experience.",
-      footerLink: [
-        {
-          name: "Visit App",
-          url: "https://github.com/Majed-alaswad9/naqla-driver/releases/tag/1.0.0"
+          url: "https://play.google.com/store/apps/details?id=com.msc.afak_elibdae"
         }
         //  you can add extra buttons here.
       ]
