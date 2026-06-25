@@ -1,50 +1,36 @@
-.education-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+@import "../../_globalColor";
 
 .education-section {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 20px 0px;
+  width: 85%;
+  max-width: 1200px;
+  padding: 40px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
-.education-section > * {
-  flex: 1;
+.education-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
   margin-bottom: 30px;
 }
 
 .education-card-container {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
 }
 
 @media (max-width: 1380px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
-    font-size: 40px;
-  }
-  .education-text-subtitle {
-    font-size: 18px;
-    text-align: center;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .education-card-container {
-    padding-top: 0px;
-  }
   .education-heading {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
-  }
-  .education-text-subtitle {
-    font-size: 16px;
   }
 }

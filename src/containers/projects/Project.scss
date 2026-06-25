@@ -1,32 +1,41 @@
-.project-title {
-  font-size: 52px;
-  font-weight: 400;
-  line-height: normal;
+@import "../../_globalColor";
+
+.main {
+  width: 85%;
+  max-width: 1200px;
+  padding: 40px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
 }
 
-.startup-project-text img {
-  max-width: 100%;
-  height: auto;
+.project-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 30px;
 }
 
 .repo-cards-div-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
 }
 
-/* Media Query */
 @media (max-width: 1380px) {
   .project-title {
-    font-size: 40px;
+    font-size: 2.2rem;
   }
 }
+
 @media (max-width: 768px) {
   .project-title {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
   }
   .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

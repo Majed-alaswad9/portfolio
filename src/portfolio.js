@@ -23,7 +23,7 @@ const greeting = {
   username: "Majed Alaswad",
   title: "Hi all, I'm Majed",
   subTitle: emoji(
-    "Highly motivated Flutter Developer with 2+ years of experience building and leading the development of mobile applications. "
+    "Experienced Flutter Developer with 2+ years of expertise in building scalable mobile applications using Clean Architecture and BLoC. I have contributed to developing diverse solutions including educational systems, delivery apps, store management software, digital service platforms, mobile recharge applications, and location-tracking systems. Proficient in Flutter, Dart, Firebase, RESTful APIs, and responsive UI design, with a strong focus on delivering high-performance, seamless user experiences."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1yhnIEtLHTlBD0aBHlJsVYlh91gBkUTOL/view?usp=sharing", // Set to empty to hide the button
@@ -37,7 +37,7 @@ const socialMediaLinks = {
   gitlab: "https://gitlab.com/majedAlaswad",
   instagram: "https://www.instagram.com/majed_alaswad",
   gmail: "alaswadmajed389@gmail.com",
-  facebook: "https://www.facebook.com/M.ALaswad9",
+  twitter: "https://x.com/majedalasw78380",
   linkedin: "https://www.linkedin.com/in/majed-alaswad-5b2743250",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -66,53 +66,74 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    
     {
-      skillName: "BLOC"
-      // fontAwesomeClassname: "fab fa-js"
+      skillName: "BLOC",
+      fontAwesomeClassname: "fas fa-cubes"
     },
     {
-      skillName: "RIVERPOD"
-      // fontAwesomeClassname: "fab fa-js"
+      skillName: "RIVERPOD",
+      fontAwesomeClassname: "fas fa-code-branch"
     },
     {
-      skillName: "Dio"
-      // fontAwesomeClassname: "fab fa-node"
+      skillName: "Dio",
+      fontAwesomeClassname: "fas fa-plug"
     },
     {
-      skillName: "Pdf"
-      // fontAwesomeClassname: "icon-typescript"
+      skillName: "Pdf",
+      fontAwesomeClassname: "fas fa-file-pdf"
     },
     {
-      skillName: "Web Socket"
-      // fontAwesomeClassname: "icon-mongodb"
-    },
-    {
-      skillName: "get_it",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "auto_route",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "flutter_screenutil",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Web Socket",
+      fontAwesomeClassname: "fas fa-bolt"
     },
     {
       skillName: "Firebase",
-      fontAwesomeClassname: "fab fa-react"
+      fontAwesomeClassname: "fab fa-google"
     },
     {
       skillName: "Notifications",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "flutter_quill",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      fontAwesomeClassname: "fas fa-bell"
     },
     {
       skillName: "flutter_secure_storage",
-      fontAwesomeClassname: "fab fa-sass"
+      fontAwesomeClassname: "fas fa-lock"
+    },
+    {
+      skillName: "get_it",
+      fontAwesomeClassname: "fas fa-cubes"
+    },
+    {
+      skillName: "auto_route",
+      fontAwesomeClassname: "fas fa-route"
+    },
+    {
+      skillName: "flutter_screenutil",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
+    {
+      skillName: "flutter_quill",
+      fontAwesomeClassname: "fas fa-feather"
+    },
+    {
+      skillName: "Node.js",
+      iconSrc: require("./assets/images/skills/nodejs.svg").default
+    },
+    {
+      skillName: "NestJS",
+      iconSrc: require("./assets/images/skills/nestjs.svg").default
+    },
+    {
+      skillName: "PostgreSQL",
+      iconSrc: require("./assets/images/skills/postgresql.svg").default
+    },
+    {
+      skillName: "Prisma",
+      iconSrc: require("./assets/images/skills/prisma.svg").default
+    },
+    {
+      skillName: "npm",
+      iconSrc: require("./assets/images/skills/npm.svg").default
     }
   ],
   display: true // Set false to hide this section, defaults to true

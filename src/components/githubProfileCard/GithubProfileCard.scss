@@ -1,105 +1,125 @@
 @import "../../_globalColor";
 
-.profile-image {
-  border-radius: 50%;
-  border: 0.5rem solid $githubProfileCardBorder;
-  margin-left: auto;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  box-shadow: $lightBoxShadow 0 30px 30px -30px;
-  transition: all 0.3s ease-out;
-}
-
-.profile-image:hover {
-  box-shadow: none;
-}
-
-.prof-title {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 400;
-}
-
-.location-div {
-  text-shadow: $githubProfileCardLocationTS;
-}
-
-.opp-div {
-  padding-bottom: 1rem;
-}
-
 .row {
   display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
 }
 
 .main-content-profile {
-  flex: 80%;
+  flex: 1.2;
 }
 
 .image-content-profile {
-  text-align: right;
-  flex: 20%;
-  max-width: 100%;
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 6px solid var(--border-color);
+  width: 100%;
+  max-width: 320px;
   height: auto;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-image:hover {
+  transform: scale(1.02);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.4);
+}
+
+.prof-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
 }
 
 .bio-text {
-  line-height: 30px;
-  font-size: 22px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.location-div, .opp-div {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .desc-prof {
-  line-height: 45px;
-  font-size: 19px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  
+  svg {
+    stroke: var(--accent-color);
+  }
+}
+
+.opp-div .desc-prof {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-color);
 }
 
 .subTitle {
-  color: $subTitle;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1380px) {
+  .prof-title {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 768px) {
   .row {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
   }
 
   .main-content-profile {
-    text-align: center;
-    order: 2;
-  }
-
-  .bio-text {
-    font-size: 16px;
+    width: 100%;
   }
 
   .image-content-profile {
-    margin-left: auto;
-    margin-right: auto;
-    order: 1;
-  }
-
-  .desc-prof {
-    line-height: 30px;
-    font-size: 16px;
-  }
-
-  .profile-image {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     max-width: 250px;
-    height: auto;
+    margin: 0 auto;
   }
 
-  .profile-image:hover {
-    box-shadow: $lightBoxShadow 0 50px 50px -50px;
-    transition: 0.3s ease-out;
+  .bio-text {
+    font-size: 1.1rem;
+  }
+
+  .location-div, .opp-div {
+    justify-content: center;
   }
 
   .prof-title {
-    padding-bottom: 1rem;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
   }
 }

@@ -5,26 +5,30 @@
   max-height: 100px;
 }
 
+.headroom {
+  z-index: 1000 !important;
+}
+
 /* header */
 
+.header {
+  background-color: var(--bg-card) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  max-width: 100%;
+  padding: 15px 40px;
+  margin: 0px auto;
+  transition: all 0.3s ease;
+}
+
 .dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary);
 }
 
 .dark-menu li a {
-  color: $textColorDark !important;
-}
-
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
-}
-
-.header {
-  background-color: $lightBackground1;
-  max-width: 100%;
-  padding: 15px 20px;
-  margin: 0px auto;
+  color: var(--text-primary) !important;
 }
 
 .header ul {
@@ -35,37 +39,56 @@
 }
 
 .grey-color {
-  color: $subTitle;
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .header li a {
   display: block;
-  padding: 15px 20px;
-  color: $textColor;
+  padding: 10px 20px;
+  color: var(--text-primary);
   text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: $headerHoverBG;
+.header li a:hover {
+  background-color: var(--headerHoverBG);
+  color: var(--accent-color) !important;
+}
+
+.dark-menu li a:hover {
+  background-color: var(--headerHoverBG) !important;
+  color: var(--accent-color) !important;
 }
 
 .header .logo {
   display: block;
   flex: none;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 5px;
   line-height: normal;
+  transition: transform 0.2s ease;
+}
+
+.header .logo:hover {
+  transform: scale(1.03);
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: "Agustina Regular", sans-serif;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 10px;
+  padding: 0 5px;
+  background: linear-gradient(135deg, var(--accent-color), #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* menu */
@@ -82,27 +105,27 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 20px 10px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: $iconBackground;
+  background: var(--text-primary);
   display: block;
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 20px;
 }
 
 .header .menu-icon .navicon-dark {
-  background: $textColorDark;
+  background: var(--text-primary);
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: $iconBackground;
+  background: var(--text-primary);
   content: "";
   display: block;
   height: 100%;
@@ -113,7 +136,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
+  background: var(--text-primary) !important;
   content: "";
   display: block;
   height: 100%;
@@ -123,11 +146,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 6px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -6px;
 }
 
 /* menu btn */
@@ -162,6 +185,7 @@
 @media (min-width: 48em) {
   .header li {
     float: left;
+    margin-left: 5px;
   }
   .header {
     display: flex;

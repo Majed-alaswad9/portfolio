@@ -3,29 +3,59 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
+.software-skill-inline > p {
+  color: var(--text-secondary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 30px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+}
+
+.software-skill-inline > p .skill-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+  transition: filter 0.25s ease;
+}
+
+.software-skill-inline > p i {
+  margin-right: 6px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.software-skill-inline > p:hover .skill-icon {
+  filter: brightness(0) invert(1);
 }
 
 .software-skill-inline > p:hover {
-  color: $skillsColor;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent-color), #d946ef);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px -3px rgba(99, 102, 241, 0.3);
 }
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 15px;
-}
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+
+@media (max-width: 768px) {
+  .dev-icons {
+    justify-content: center;
+  }
 }

@@ -1,48 +1,67 @@
 @import "../../_globalColor";
 
 .main {
-  width: 90%;
-  padding: 20px 10px;
+  width: 85%;
+  max-width: 1200px;
+  padding: 40px 10px;
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
-  width: 90%;
-  padding: 20px 10px;
+  width: 85%;
+  max-width: 1200px;
+  padding: 40px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .greeting-main {
   display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .subTitle {
-  color: $subTitle !important;
+  color: var(--text-secondary) !important;
 }
 
-.greeting-main {
+.greeting-text-div {
+  flex: 1.2;
+}
+
+.greeting-image-div {
+  flex: 0.8;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
+  font-size: 3.5rem;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary) !important;
+  margin-bottom: 20px;
+  
+  // Clean modern gradient
+  background: linear-gradient(135deg, var(--text-primary) 30%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
 }
 
 .greeting-image-div > img {
@@ -59,61 +78,58 @@
 }
 
 @keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  20% {
-    transform: rotate(12deg);
-  }
-  30% {
-    transform: rotate(-10deg);
-  }
-  40% {
-    transform: rotate(9deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-10deg); }
+  20% { transform: rotate(12deg); }
+  30% { transform: rotate(-10deg); }
+  40% { transform: rotate(9deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 3rem;
   }
   .greeting-text-p {
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-main {
-    display: block;
-  }
-  .greeting-image-div {
-    height: 256px;
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 320px) {
-  .main {
-    width: auto;
+@media (max-width: 768px) {
+  .greeting-main {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .greeting-text-div {
+    width: 100%;
+  }
+  
+  .greeting-text {
+    font-size: 2.2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .greeting-text-p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .button-greeting-div {
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .greeting-image-div {
+    width: 100%;
+    max-width: 320px;
   }
 }

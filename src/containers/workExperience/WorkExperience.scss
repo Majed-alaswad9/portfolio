@@ -1,37 +1,41 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+@import "../../_globalColor";
+
+.experience-container {
+  width: 85%;
+  max-width: 1200px;
+  padding: 40px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
 }
 
 .experience-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 30px;
 }
 
-.experience-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
 }
-
-.experience-container > * {
-  flex: 1;
-}
-
-/* Media Query */
 
 @media (max-width: 1380px) {
   .experience-heading {
-    font-size: 40px;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
+  }
+  .experience-cards-div {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
