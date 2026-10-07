@@ -26,7 +26,7 @@ const greeting = {
     "Experienced Flutter Developer with 2+ years of expertise in building scalable mobile applications using Clean Architecture and BLoC. I have contributed to developing diverse solutions including educational systems, delivery apps, store management software, digital service platforms, mobile recharge applications, and location-tracking systems. Proficient in Flutter, Dart, Firebase, RESTful APIs, and responsive UI design, with a strong focus on delivering high-performance, seamless user experiences."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1yhnIEtLHTlBD0aBHlJsVYlh91gBkUTOL/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1bND8XaOshGovIoUJ2_TyKbyKcNecLyiB/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -66,7 +66,6 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    
     {
       skillName: "BLOC",
       fontAwesomeClassname: "fas fa-cubes"
@@ -280,14 +279,14 @@ const bigProjects = {
       image: require("./assets/images/kaiali_logo.jpg"),
       projectName: "Kaiali App",
       projectDesc:
-        "A mobile application that aims to provide an integrated platform for topping up mobile credit and purchasing digital gaming cards."
-      // footerLink: [
-      //   {
-      //     name: "Visit App",
-      //     url: "https://play.google.com/store/apps/details?id=com.leadbridge.golden_tag&pcampaignid=web_share"
-      //   }
-      //   //  you can add extra buttons here.
-      // ]
+        "A mobile application that aims to provide an integrated platform for topping up mobile credit and purchasing digital gaming cards.",
+      footerLink: [
+        {
+          name: "Visit App",
+          url: "https://play.google.com/store/apps/details?id=com.kaialigame.kaiali"
+        }
+        //  you can add extra buttons here.
+      ]
     },
     {
       image: require("./assets/images/sw.png"),
