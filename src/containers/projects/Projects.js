@@ -19,7 +19,7 @@ export default function Projects() {
     const getRepoData = async () => {
       try {
         const res = (await axios.get("./profile.json")).data.data;
-        setrepoFunction(res.user.pinnedItems.edges);
+        setrepoFunction(res.user.pinnedItems.edges.filter(edge => edge?.node));
       } catch (error) {
         console.log(error);
         setrepoFunction("Error");

@@ -23,7 +23,7 @@ const greeting = {
   username: "Majed Alaswad",
   title: "Hi all, I'm Majed",
   subTitle: emoji(
-    "Experienced Flutter Developer with 2+ years of expertise in building scalable mobile applications using Clean Architecture and BLoC. I have contributed to developing diverse solutions including educational systems, delivery apps, store management software, digital service platforms, mobile recharge applications, and location-tracking systems. Proficient in Flutter, Dart, Firebase, RESTful APIs, and responsive UI design, with a strong focus on delivering high-performance, seamless user experiences."
+    "Results-driven Flutter Developer with 3+ years of professional experience designing, developing, and maintaining scalable mobile applications. Experienced in Clean Architecture, BLoC, Riverpod, REST APIs, WebSockets, Firebase, and dependency injection. Contributed across the full mobile development lifecycle, from architecture and UI implementation to API integration, testing, optimization, and production delivery across education, gaming services, digital payments, jewelry management, food delivery, and real-time tracking products."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1bND8XaOshGovIoUJ2_TyKbyKcNecLyiB/view?usp=sharing", // Set to empty to hide the button
@@ -37,6 +37,8 @@ const socialMediaLinks = {
   gitlab: "https://gitlab.com/majedAlaswad",
   instagram: "https://www.instagram.com/majed_alaswad",
   gmail: "alaswadmajed389@gmail.com",
+  telegram: "https://t.me/MajedALaswad",
+  whatsapp: "https://wa.me/963998988823",
   twitter: "https://x.com/majedalasw78380",
   linkedin: "https://www.linkedin.com/in/majed-alaswad-5b2743250",
   // Instagram, Twitter and Kaggle are also supported in the links!

@@ -44,6 +44,32 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.telegram ? (
+        <a
+          href={socialMediaLinks.telegram}
+          className="icon-button telegram"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Telegram"
+        >
+          <i className="fab fa-telegram-plane"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.whatsapp ? (
+        <a
+          href={socialMediaLinks.whatsapp}
+          className="icon-button whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          <i className="fab fa-whatsapp"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}
