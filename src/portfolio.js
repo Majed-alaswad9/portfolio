@@ -345,3 +345,39 @@ export {
   contactInfo,
   isHireable
 };
+
+// Capabilities describe the work; toolkit groups the tools used to deliver it.
+export const toolkit = [
+  {
+    title: "Core technologies",
+    items: [
+      "Flutter",
+      "Dart",
+      "Node.js",
+      "NestJS",
+      "Firebase",
+      "PostgreSQL",
+      "Prisma"
+    ]
+  },
+  {
+    title: "Architecture & state",
+    items: ["Clean Architecture", "BLoC", "Riverpod", "Dependency injection"]
+  },
+  {title: "Workflow & collaboration", items: ["Git", "Trello", "Jira"]},
+  {
+    title: "AI-assisted development",
+    items: ["Codex", "Claude", "Cursor", "GitHub Copilot"]
+  }
+];
+
+export const mobileCapabilities = [
+  "Maps & location",
+  "Live tracking",
+  "Push notifications",
+  "Real-time updates",
+  "REST API integration",
+  "Offline storage",
+  "Custom animations",
+  "Secure storage"
+];
