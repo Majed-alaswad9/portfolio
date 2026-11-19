@@ -278,7 +278,7 @@ function App() {
               <br />
               into apps
               <br />
-              <span>people love.</span>
+              <span>that people love.</span>
               <span className="hero-asterisk" aria-hidden="true">
                 ✳
               </span>
