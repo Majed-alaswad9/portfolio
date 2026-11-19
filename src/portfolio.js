@@ -315,6 +315,18 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
+    },
+    {
+      image: require("./assets/images/syria_tracking.jpeg"),
+      projectName: "Syria Tracking",
+      projectDesc:
+        "Developed a cross-platform Flutter application for enterprise fleet tracking, featuring low-latency live vehicle monitoring via WebSockets and interactive historical route playback. Built with Clean Architecture and BLoC, integrating OpenStreetMap/Flutter Map, automated PDF reports, and real-time push notifications via Firebase Cloud Messaging (FCM). Engineered high-performance state management and socket streaming to smoothly handle high-frequency telemetry updates across drivers and vehicles.",
+      footerLink: [
+        {
+          name: "Visit App",
+          url: "https://syriatracking.com/"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true

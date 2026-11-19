@@ -55,9 +55,14 @@ const projectDetails = {
     category: "Education",
     type: "School management",
     color: "mint"
+  },
+  "Syria Tracking": {
+    category: "Logistics",
+    type: "Enterprise fleet tracking",
+    color: "blue"
   }
 };
-const categories = ["All projects", "Commerce", "Education", "Gaming"];
+const categories = ["All projects", "Commerce", "Education", "Gaming", "Logistics"];
 const expertise = [
   {
     icon: FiSmartphone,
