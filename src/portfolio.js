@@ -195,6 +195,14 @@ export const workExperiences = {
       role: "Flutter Developer",
       link: "http://nexleadtech.com/"
     },
+     {
+      company: "Manaret Shahbaa Co",
+      desc: "Saudi Arabia, Riyadh",
+      date: "15-10-2025 -> 01-09-2026",
+      companyLogo: require("./assets/images/msc.png"),
+      role: "Flutter Developer",
+      link: "https://msc-global.net/"
+    },
     {
       company: "Al-Roya",
       desc: "شركة برمجيات رائدة تأسست عام 2023 بهدف تقديم حلول تقنية مبتكرة للشركات والمؤسسات.",
@@ -202,14 +210,6 @@ export const workExperiences = {
       companyLogo: require("./assets/images/alroya.png"),
       role: "Flutter Developer",
       link: "https://alroya.tech/"
-    },
-    {
-      company: "Manaret Shahbaa Co",
-      desc: "Saudi Arabia, Riyadh",
-      date: "15-10-2025 -> present",
-      companyLogo: require("./assets/images/msc.png"),
-      role: "Flutter Developer",
-      link: "https://msc-global.net/"
     }
   ],
   display: true
